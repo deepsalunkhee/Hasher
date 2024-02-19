@@ -1,6 +1,6 @@
 {
   "name": "@deepsalunkhee/hasher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Hashing lib",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/deepsalunkhee/Hasher/issues"
   },
-  "homepage": "https://github.com/deepsalunkhee/Hasher#readme"
+  "homepage": "https://github.com/deepsalunkhee/Hasher#readme",
+  "dependencies": {
+    "@deepsalunkhee/hasher": "^1.0.0"
+  }
 }

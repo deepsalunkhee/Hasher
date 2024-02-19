@@ -1,5 +1,5 @@
 function hasher(){
-    return true;
+    return false;
 }
 
 module.exports=hasher;
