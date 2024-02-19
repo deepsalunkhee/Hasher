@@ -1,0 +1,22 @@
+{
+  "name": "@deepsalunkhee/hasher",
+  "version": "1.0.0",
+  "description": "A simple Hashing lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepsalunkhee/Hasher.git"
+  },
+  "keywords": [
+    "hashing"
+  ],
+  "author": "deepsalunkhee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepsalunkhee/Hasher/issues"
+  },
+  "homepage": "https://github.com/deepsalunkhee/Hasher#readme"
+}
