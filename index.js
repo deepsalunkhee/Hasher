@@ -1,5 +1,9 @@
-function hasher(){
+function hashertrue(){
+    return true;
+}
+
+function hasherfalse(){
     return false;
 }
 
-module.exports=hasher;
+module.exports={hashertrue,hasherfalse};
