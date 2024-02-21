@@ -1,9 +1,17 @@
-function hashertrue(){
-    return true;
+const { verify } = require('./verify');
+const {encrypt}=require('./encrypt');
+
+
+function hash(data){
+    return encrypt(data);
 }
 
-function hasherfalse(){
-    return false;
+function check(hasheddata,data){
+    return verify(hasheddata,data);
 }
 
-module.exports={hashertrue,hasherfalse};
+
+
+
+
+module.exports={hash,check};
