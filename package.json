@@ -1,6 +1,6 @@
 {
   "name": "@deepsalunkhee/hasher",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple Hashing lib",
   "main": "index.js",
   "scripts": {
