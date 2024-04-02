@@ -18,14 +18,28 @@ function encrypt(message) {
     ];
 
     // Helper functions
+
+    // Bitwise rotation functions
+    //inputs: x: number, n: number
+    //Tasks: Rotate x right by n bits
     function rotr(x, n) { return (x >>> n) | (x << (32 - n)); }
+
+    // Bitwise logical functions
+    //inputs: x: number, n: number
+    //Tasks: Shift x right by n bits
     function shr(x, n) { return x >>> n; }
+
+    // SHA-256 functions
+
+    //These are the function which are used in each round of the SHA-256 algorithm
     function sig0(x) { return rotr(x, 2) ^ rotr(x, 13) ^ rotr(x, 22); }
     function sig1(x) { return rotr(x, 6) ^ rotr(x, 11) ^ rotr(x, 25); }
     function S0(x) { return rotr(x, 7) ^ rotr(x, 18) ^ shr(x, 3); }
     function S1(x) { return rotr(x, 17) ^ rotr(x, 19) ^ shr(x, 10); }
 
     // Pre-processing
+    // Convert message to array of 64-byte chunks
+    //why: The message is divided into 64-byte chunks, and each chunk is further divided into 4-byte words 
     let m = [];
     for (let i = 0; i < message.length; i += 64) {
         let chunk = message.slice(i, i + 64);
