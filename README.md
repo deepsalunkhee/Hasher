@@ -1,3 +1,6 @@
+### Note:
+- This is My Semester 6 Cryptogrphy labwork and I do not plan to make any further changes here so I am archiving this repo ✌🏽. Enjoy !
+
 # SHA-256 Logic
 
 ## Constants:
